@@ -7,7 +7,10 @@ end
 
 #Nifty generators
 if yes?("Do you want to use Nifty Generator?")
- sudo gem install nifty-generators
+ plugin "nifty-generators", :git => "git://github.com/ryanb/nifty-generators.git"
+ 
+ #rake('gems:install', :sudo => true)
+
  generate :nifty_layout
 end
  
