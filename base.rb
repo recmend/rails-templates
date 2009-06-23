@@ -8,8 +8,8 @@ end
 #Nifty generators
 if yes?("Do you want to use Nifty Generator")
  sudo gem install nifty-generators
- 
-generate :nifty_layout
+ generate :nifty_layout
+end
  
 git :init
  
